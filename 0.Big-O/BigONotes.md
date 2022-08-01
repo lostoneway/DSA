@@ -17,4 +17,14 @@ How do we determine what's best? That's what Big O is for. Think of it as a "sca
 - Different machines will record different times 
 - The *same* machine will record different time!
 - For fast algos, speed measure may not be precise enough? 
-            **This is where Big O comes into play**
+**This is where Big O comes into play**
+
+- Let's count the # of simple operations the computer has to perform rather than counting seconds. 
+
+```
+function addUptTo(n) {
+    return n * (n + 1) / 2
+}
+```
+
+
