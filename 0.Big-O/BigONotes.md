@@ -25,6 +25,7 @@ How do we determine what's best? That's what Big O is for. Think of it as a "sca
 function addUptTo(n) {
     return n * (n + 1) / 2
 }
+//1-multiplication, 1-addition, 1-division ; 3 simple operation, regardless of the size of n 
 ```
 
 
