@@ -8,7 +8,7 @@
 - Evaluate the time complexity and space complexity of different algorithms using Big O Notation 
 - Describe what a logarithm is 
 
-----------------------------------------------------------------
+---
 
 How do we determine what's best? That's what Big O is for. Think of it as a "scale" to determine what's best. Like a numeric representation. 
 
