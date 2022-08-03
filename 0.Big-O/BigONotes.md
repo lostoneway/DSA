@@ -54,7 +54,8 @@ function addUpTo(n){
     }
     return total 
 }
-//notice the loop here! regards of the exact number, the number of operations grows roughly in proportion with n so O(n)
+//notice the loop here! 
+//regards of the exact number, the number of operations grows roughly in proportion with n so O(n)
 
 Linear - O(n)
 function addUpTo(n){
