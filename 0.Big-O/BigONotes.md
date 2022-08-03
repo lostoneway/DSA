@@ -30,9 +30,8 @@ function addUpTo(n) {
 }
 //1-multiplication, 1-addition, 1-division
 //3 simple operations, regardless of the size of n, remains constant O(1)
-```
 
-**Constant** - O(1) :
+Constant - O(1) :
 
 function addUpTo(n){
 	return n * (n+1) / 2
@@ -44,6 +43,7 @@ function addUpTo(n){
   e|_________________________
         input size
 
+```
 ---
 ```
 EXAMPLE: 
@@ -55,8 +55,8 @@ function addUpTo(n){
     return total 
 }
 //notice the loop here! regards of the exact number, the number of operations grows roughly in proportion with n so O(n)
-```
-**Linear** - O(n)
+
+Linear - O(n)
 function addUpTo(n){
     let total = 0; 
     for(let i =1; i <= n; i++){
@@ -70,9 +70,9 @@ function addUpTo(n){
   e| /
    |/_______________
          input size
-
----
 ```
+---
+
 ## Key Takeaways
 - Constants don't matter! 
 - O(2n) -> O(n)
