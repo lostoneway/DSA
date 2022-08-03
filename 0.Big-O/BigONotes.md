@@ -1,5 +1,5 @@
 # Big O Notation 
-[Big O Graph](BigOGraph.png)
+![Big O Graph](BigOGraph.png)
 
 ## Objectives: 
 - Motivate the need for it 
