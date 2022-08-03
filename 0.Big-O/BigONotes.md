@@ -29,9 +29,11 @@ function addUpTo(n) {
     return n * (n + 1) / 2
 }
 //1-multiplication, 1-addition, 1-division
-//3 simple operations, regardless of the size of n, remains ==constant== **O(1)**
+//3 simple operations, regardless of the size of n, remains constant O(1)
+```
 
-How it looks on a graph 
+**Constant** - O(1) :
+
 function addUpTo(n){
 	return n * (n+1) / 2
 }
@@ -42,7 +44,6 @@ function addUpTo(n){
   e|_________________________
         input size
 
-```
 ---
 ```
 EXAMPLE: 
@@ -53,9 +54,9 @@ function addUpTo(n){
     }
     return total 
 }
-//notice the loop here! regards of the exact number, the number of operations grows roughly in proportion with n so **O(n)**
-
-How it looks on a graph: 
+//notice the loop here! regards of the exact number, the number of operations grows roughly in proportion with n so O(n)
+```
+**Linear** - O(n)
 
 function addUpTo(n){
     let total = 0; 
@@ -70,7 +71,7 @@ function addUpTo(n){
   e| /
    |/_______________
          input size
-```
+
 ---
 ## Key Takeaways
 - Constants don't matter! 
