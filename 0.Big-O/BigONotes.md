@@ -26,7 +26,7 @@ How do we determine what's best? That's what Big O is for. Think of it as a "sca
 - Let's count the # of simple operations the computer has to perform rather than counting seconds. 
 
 ```
-Constant - O(1): 
+Constant Time - O(1): 
 
 EXAMPLE:
 function addUpTo(n) {
@@ -49,7 +49,7 @@ function addUpTo(n){
 ```
 ---
 ```
-Linear - O(n):
+Linear Time - O(n):
 
 EXAMPLE: 
 function addUpTo(n){
