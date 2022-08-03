@@ -57,7 +57,6 @@ function addUpTo(n){
 //notice the loop here! regards of the exact number, the number of operations grows roughly in proportion with n so O(n)
 ```
 **Linear** - O(n)
-```
 function addUpTo(n){
     let total = 0; 
     for(let i =1; i <= n; i++){
