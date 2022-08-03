@@ -11,6 +11,7 @@ log<sub>2</sub>(value) = exponent -> 2<sup>exponent</sup> = value
  log<sub>2</sup>! So log === log<sup>2</sup>
 
 ```
+Logarithmic Linear Time- O(log n)
 GRAPH: 
 
   t|
@@ -20,3 +21,7 @@ GRAPH:
   |/_________________________
         input size
 ``` 
+## Why do we care?
+- Certain searching algos have log time complexity
+- Efficient sorting algos involve logs 
+- Recursion sometimes involves log space compleity 
