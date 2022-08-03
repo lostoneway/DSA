@@ -78,8 +78,8 @@ function addUpTo(n){
 - Constants don't matter! 
 - O(2n) -> O(n)
 - O(500) -> O(1)
-- O(13nX^2^) -> O(nX^2^)
-- o(nX^2^ + 5n + 8) -> O(nX^2^)
+- O(13n^2^) -> O(n^2^)
+- o(n^2^ + 5n + 8) -> O(n^2^)
 
 ## Big O Shorthands (usually not always true):
 1. Arithmetic ops are constant 
