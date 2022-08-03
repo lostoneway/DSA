@@ -14,6 +14,8 @@ Big O
 
 How do we determine what's best? That's what Big O is for. Think of it as a "scale" to determine what's best. Like a numeric representation. 
 
+## Time Complexity 
+- How can we analyze the runtime of an algorithm as the size of the imput increases
 
 ### The problem with time: 
 - Different machines will record different times 
@@ -89,4 +91,4 @@ function addUpTo(n){
 2. Variable assignments are constant
 3. Accessing elements in an arr (by index) or object (by key) is constant
 4. In a loop the complexity is the length of the loop times the complexity of whatever happens inside the loop.
-
+---
