@@ -19,7 +19,7 @@ function sum (arr){
     return total
 }
 //2 declarations let total = 0; and let i = 0
-//They exist no matter what, we aren't making a new variable so 
+//They exist no matter what, we aren't making a new variable
 ``` 
 ---
 ```
