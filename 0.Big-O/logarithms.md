@@ -8,7 +8,8 @@ log<sub>2</sub>(8)= 3  ->  2<sup>3</sup> = 8
 log<sub>2</sub>(value) = exponent -> 2<sup>exponent</sup> = value
 
 ## Let's simplify it at scale since it doesn't really matter:
- log<sub>2</sup>! So log === log<sup>2</sup>
+ log<sub>2</sup>! 
+ So log === log<sup>2</sup>
 
 ```
 Logarithmic Linear Time- O(log n)
