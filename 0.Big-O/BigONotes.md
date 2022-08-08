@@ -81,7 +81,7 @@ function addUpTo(n){
 ---
 
 ## Key Takeaways
-- Constants don't matter! 
+- *Constants don't matter! As we move towards infinity, constant become less and less significant. We find the HIGHEST ORDER or step with the worst performance*
 - O(2n) -> O(n)
 - O(500) -> O(1)
 - O(13n<sup>2</sup>) -> O(n<sup>2</sup>)
