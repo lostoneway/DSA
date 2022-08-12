@@ -4,7 +4,7 @@
 
 ## Rules of Thumb
 - Most primitives (booleans, numbers, `undefined` and `null`) are constant space 
-- Strings requre O(n) space (where n is the string length)
+- Strings require O(n) space (where n is the string length)
 - Reference types are generally O(n), where n is `.length` (for arrays) and the number of keys (for objects)
 
 ```
