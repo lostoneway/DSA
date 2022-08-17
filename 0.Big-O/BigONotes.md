@@ -93,3 +93,23 @@ function addUpTo(n){
 3. Accessing elements in an arr (by index) or object (by key) is constant
 4. In a loop the complexity is the length of the loop times the complexity of whatever happens inside the loop.
 ---
+
+## Objects and Arrays 
+
+- *Objects* are an unordered data structure, stored in key value pairs. 
+- Work well whe you don't need order and when you need fast insertion/removal (and acessing) data
+- *Arrays* are ordered lists. Can come at a cost for some of the operations 
+
+## Big O of Objects
+- Insertion - O(1)
+- Removal - O(1)
+- Searching - O(n)
+- Access - O(1)
+
+## Big O of Object Methods 
+- Object.keys - O(n)
+- Object.values - O(n)
+- Object.entries - O(n)
+- hasOwnProperty - O(1)
+---
+## Big O of Arrays 
