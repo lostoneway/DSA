@@ -98,7 +98,8 @@ function addUpTo(n){
 
 - *Objects* are an unordered data structure, stored in key value pairs. 
 - Work well whe you don't need order and when you need fast insertion/removal (and acessing) data
-- *Arrays* are ordered lists. Can come at a cost for some of the operations 
+- *Arrays* are ordered lists. Can come at a cost for some of the operations.
+
 
 ## Big O of Objects
 - Insertion - O(1)
@@ -113,3 +114,19 @@ function addUpTo(n){
 - hasOwnProperty - O(1)
 ---
 ## Big O of Arrays 
+- Insertion - Depends on *WHERE* we are adding sonmething in. Adding to the *END* of an array is O(1). When we try to insert at the beginning, we have to go through and re-index the array, this takes time so insertion at the *beginning* is O(n)
+- Removal - Depends on *WHERE*, same here, if removing from the *beginnin* same deal as insertion, gotta re-index the entire array so O(n)
+- Searching - O(n)
+- Access - O(1)
+
+## Big O of Array Methods 
+- Push - O(1)
+- Pop - O(1)
+- Shift - O(n)
+- Unshift - O(n)
+- Sort - O(n * log n)
+- forEach/map/reduce/ you ghet the idea - O(n)
+
+## Key Takeways 
+1. Obj are fast at pretty much every but no order
+2. Arrays are great when you need order and better to add/remove from the end all the other would require a re-index and that is slow yo 
