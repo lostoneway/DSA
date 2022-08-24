@@ -1,0 +1,2 @@
+# Introducing myself to LeetCode via NeetCode.io 
+- While working through my Colt Steele DSA course, I've got to practice problems too. In this folder you'll find Neetcode's 150/Blind 75 solutions as I work through them. I plan to follow Neetcode's guide and build up my strength solving problems. 
