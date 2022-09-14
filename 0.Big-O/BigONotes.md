@@ -139,7 +139,7 @@ const sumContigousArray = function(ary){
     //get the last item
     const lastItem = ary[ary.length-1]
     //Gauss trick
-    return lastItem * (lastItem + 1) /2 
+    return lastItem * (lastItem + 1) / 2 
 }
 
 const nums =[1,2.3,4,5]
