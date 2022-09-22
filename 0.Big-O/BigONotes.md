@@ -11,9 +11,10 @@
 
 ---
 Big O
-: We say that an algorithm is **O(f(n))** if the number of simple operations the computer has to do is eventually less than the constant times **f(n)**, as **n** increases
+: We say that an algorithm is **O(f(n))** if the number of simple operations the computer has to do is eventually less than the constant times **f(n)**, as **n** increases. 
+**In simpler words** 
+Big O Notation is also known as the *upper bound of an algorithm* or *worst case* tells us that a certain function will never exceed or take more than a specific time to execute irrespective of the value of the input(n)
 
-How do we determine what's best? That's what Big O is for. Think of it as a "scale" to determine what's best. Like a numeric representation. 
 
 ## Time Complexity 
 - How can we analyze the runtime of an algorithm as the size of the imput increases
@@ -22,8 +23,9 @@ How do we determine what's best? That's what Big O is for. Think of it as a "sca
 - Different machines will record different times 
 - The *same* machine will record different time!
 - For fast algos, speed measure may not be precise enough? 
-**This is where Big O comes into play**
-- Big O Notation is also known as the *upper bound of an algorithm* or *worst case* tells us that a certain function will never exceed or take more than a specific time to execute irrespective of the value of the input(n)
+
+
+- How do we determine what's best? That's what Big O is for. Think of it as a "scale" to determine what's best. Like a numeric representation. 
 
 - Let's count the # of simple operations the computer has to perform rather than counting seconds. 
 
