@@ -14,7 +14,7 @@ function reverseString(text) {
     return [...text].reverse().join('')
 }
 
-// //for loop way 
+//* for loop way 
 function reverseString(text) {
     let result = '';
     for(let i = text.length - 1; i >= 0; i--){
@@ -23,11 +23,11 @@ function reverseString(text) {
     return result
 }
 
-// //for...of loop used to execute a certain piece of code for each distinct item(property) of an iterable object 
+//* for...of loop used to execute a certain piece of code for each distinct item(property) of an iterable object 
 function reverseString(text){
     let result = '';
     for(let char of text){
-        //as we loop through we take each char from the end of the string and append it to the START of the string
+        //! as we loop through we take each char from the end of the string and append it to the START of the string
         result = char + result // l+a
     }
     return result
@@ -43,13 +43,13 @@ function reverseString(text){
     }
 }
 
-// //reduce() takes our character and adds it to the START of our result, similar to our for...of loop
+//reduce() takes our character and adds it to the START of our result, similar to our for...of loop
 function reverseString(text){
     return text.split('')
     .reduce((acc,char) => char + acc, '')
 }
 
-// //ES6 syntax spread operator
+//ES6 syntax spread operator
 function reverseString(text){
     return [...text]
     .reduce((acc,char) => char + acc, '')
