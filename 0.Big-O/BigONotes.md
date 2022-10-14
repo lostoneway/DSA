@@ -62,6 +62,7 @@ function addUpTo(n){
 }
 //notice the loop here! 
 //regards of the exact number, the number of operations grows roughly in proportion with n so O(n)
+//for each input I have, I add ANOTHER operation 
 
 GRAPH:
 function addUpTo(n){
@@ -130,3 +131,4 @@ function addUpTo(n){
 ## Key Takeways 
 1. Obj are fast at pretty much every but no order
 2. Arrays are great when you need order and better to add/remove from the end all the other would require a re-index and that is slow yo 
+ 
