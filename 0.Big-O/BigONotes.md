@@ -131,4 +131,17 @@ function addUpTo(n){
 ## Key Takeways 
 1. Obj are fast at pretty much every but no order
 2. Arrays are great when you need order and better to add/remove from the end all the other would require a re-index and that is slow yo 
- 
+
+## Gauss' trick! O(1) vs O(n)
+- Summing function for a *SORTED*, *CONTIGUOUS* array of integers that starts with the nunmbeer 1? Could easily be O(n) but this trick could make it O(1)! 
+```
+const sumContigousArray = function(ary){
+    //get the last item
+    const lastItem = ary[ary.length-1]
+    //Gauss trick
+    return lastItem * (lastItem + 1) /2 
+}
+
+const nums =[1,2.3,4,5]
+const sumOfArray = sumContigousArray(nums)
+```
