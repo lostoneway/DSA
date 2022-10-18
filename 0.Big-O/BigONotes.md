@@ -23,6 +23,7 @@ How do we determine what's best? That's what Big O is for. Think of it as a "sca
 - The *same* machine will record different time!
 - For fast algos, speed measure may not be precise enough? 
 **This is where Big O comes into play**
+- Big O Notation is also known as the *upper bound of an algorithm* or *worst case* tells us that a certain function will never exceed or take more than a specific time to execute irrespective of the value of the input(n)
 
 - Let's count the # of simple operations the computer has to perform rather than counting seconds. 
 
