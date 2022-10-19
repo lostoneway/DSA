@@ -119,7 +119,7 @@ function addUpTo(n){
 ---
 ## Big O of Arrays 
 - Insertion - Depends on *WHERE* we are adding sonmething in. Adding to the *END* of an array is O(1). When we try to insert at the beginning, we have to go through and re-index the array, this takes time so insertion at the *beginning* is O(n)
-- Removal - Depends on *WHERE*, same here, if removing from the *beginnin* same deal as insertion, gotta re-index the entire array so O(n)
+- Removal - Depends on *WHERE*, same here, if removing from the *beginning* same deal as insertion, gotta re-index the entire array so O(n)
 - Searching - O(n)
 - Access - O(1)
 
@@ -129,7 +129,7 @@ function addUpTo(n){
 - Shift - O(n)
 - Unshift - O(n)
 - Sort - O(n * log n)
-- forEach/map/reduce/ you ghet the idea - O(n)
+- forEach/map/reduce/ you get the idea - O(n)
 
 ## Key Takeways 
 1. Obj are fast at pretty much every but no order
