@@ -3,3 +3,8 @@ This will serve as my place for my Data Structures and Algorithms study guide an
 
 ## Remember! 
 Data structures help us organize data meaningfully and algorithms manipulate data for us efficiently. 
+
+## Tech used: 
+- JavaScript
+- Jest
+- jsbench 
