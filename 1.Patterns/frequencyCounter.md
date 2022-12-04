@@ -69,7 +69,43 @@ Write a function called same, which accepts two arrays. The function should retu
     same([3,6,9],[9,81,34])//false 
 ```
 
-- This is basically 3n and constant "don't matter" so it narrows down to 0(n). Don't let the number of lines of code make you feel like this is too much code and would take longer!
+- This is basically 3n and constant "doesn't matter" so it narrows down to 0(n). Don't let the number of lines of code make you feel like this is too much code and would take longer!
 
 # Anagrams using the frequency counter pattern
 ## Example:
+Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase or name formed by rearranging the letters of another, such as cinema, formed from iceman. Assume everything is lowercase and one word and no spaces. 
+
+```javascript
+function validAnagram(str1,str2){
+    //base case, are strings the same length?
+    if(str1.length !== str2.length){
+        return false; 
+    }
+    //create obj
+    const lookup = {}
+    //loop over every letter in first str
+    for(let i = 0; i < str1.length; i++){
+        let letter = str1[i];
+        //if letter exists, increment, otherwise set to 1
+        lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
+    }
+    for(let i = 0; i < str2.length; i++){
+        let letter = str2[i];
+        //can't find letter or letter is 0 (falsy), then it's not an anagram
+        if(!lookup[letter]){
+            return false;
+        }else{
+            //looking at our lookup obj, if the letter is there we subtract 1
+            lookup[letter] -= 1; 
+        }
+    }
+    return true;
+}
+```
+validAnagram('','') //true
+validAnagram('aaz','zza') //false
+validAnagram('anagram','nagaram') //true
+validAnagram('rat','car') //false
+validAnagram('awesome','awesom') //false
+validAnagram('qwerty','qeywrt') //true
+validAnagram('texttwisttime','timetwisttext') //true
