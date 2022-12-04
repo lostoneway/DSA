@@ -1,4 +1,5 @@
-- This pattern uses objects or sets to collect values/frequencies of values. This can often avoid the need for nested loops or O(n<sup>2</sup>) operations with arrays/strings.
+# Frequency Counter 
+- This pattern uses objects or sets to collect values/frequencies of values. You are building a profile to quickly compare the breakdown between the objects. This can often avoid the need for nested loops or O(n<sup>2</sup>) operations with arrays/strings.
 - This helps us make it linear O(n)
 
 ## Example: 
@@ -25,9 +26,9 @@ Write a function called same, which accepts two arrays. The function should retu
     }
 ```
 
-- What's the problem here? This is a quadratic. We have a for loop as well as indexOf() which is also iterating over the array. So as n grows as does these. We can refactor it to be O(n)! 
+- What's the problem here? This is a quadratic. We have a `for loop` as well as `indexOf()` which is also iterating over the array. So as n grows as does these. We can refactor it to be O(n)! 
 
-- Remember 2 separate loops is much better than 1 nested loop! 
+- *Remember 2 separate loops is much better than 1 nested loop!*
 
 ```javascript 
     function same(arr1, arr2){
@@ -69,3 +70,6 @@ Write a function called same, which accepts two arrays. The function should retu
 ```
 
 - This is basically 3n and constant "don't matter" so it narrows down to 0(n). Don't let the number of lines of code make you feel like this is too much code and would take longer!
+
+# Anagrams using the frequency counter pattern
+## Example:
