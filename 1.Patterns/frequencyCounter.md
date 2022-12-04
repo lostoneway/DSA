@@ -102,6 +102,7 @@ function validAnagram(str1,str2){
     return true;
 }
 ```
+```javascript
 validAnagram('','') //true
 validAnagram('aaz','zza') //false
 validAnagram('anagram','nagaram') //true
@@ -109,3 +110,4 @@ validAnagram('rat','car') //false
 validAnagram('awesome','awesom') //false
 validAnagram('qwerty','qeywrt') //true
 validAnagram('texttwisttime','timetwisttext') //true
+```
