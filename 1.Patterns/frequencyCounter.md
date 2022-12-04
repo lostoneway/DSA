@@ -38,12 +38,34 @@ Write a function called same, which accepts two arrays. The function should retu
         //frequency counter, set two obj to compare
         let frequencyCounter1 = {};
         let frequencyCounter2 = {};
-        //loop over first array 
+        //loop over every value in 1st arr 
         for(let value of arr1){
+            //add 1 if it is already in there or initialize it
             frequencyCounter1[value] = (frequencyCounter1[value] || 0) + 1
         }
         for(let value of arr2){
-            
+            frequencyCounter2[value] = (frequencyCounter2[value] || 0) + 1
         }
-    }
+        console.log(frequencyCounter1);
+        console.log(frequencyCounter2);
 
+        for(let key in frequencyCounter1){
+            //checks if the key in frequencyCounter1 is squared in frequencyCounter2
+            if(!(key ** 2 in frequencyCounter2)){
+                return false
+            }
+            //check if there are the same number of values in frequencyCounter2 as there are in frequencyCounter1
+            if(frequencyCounter2 [key ** 2] !== frequencyCounter1[key]){
+                return false
+            }
+        }
+        return true 
+    }
+```
+```javascript
+    same([1,2,3,4],[1,4,9,16]) //true 
+    same([2,5,7,5],[25,25,4,49])//true
+    same([3,6,9],[9,81,34])//false 
+```
+
+- This is basically 3n and constant "don't matter" so it narrows down to 0(n). Don't let the number of lines of code make you feel like this is too much code and would take longer!
