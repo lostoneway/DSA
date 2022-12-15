@@ -49,3 +49,31 @@ sumZero([-2,-0,1,3])//undefined
 sumZero([1,2,3])//undefined
 ```
 
+## Example 2: 
+Implement a function called countUniqueValues, which accepted a *sorted* array, and counts the unique values in the array. Ther can be negative numbers in the array, but it will always be sorted. 
+
+- Here we will have two pointers moving SOME direction. Not necessarily, 1 pointer at the beginning and 1 pointer at the end. 
+
+```javascript
+function countUniqueValues(arr){
+    //catch all if array is empty
+    if(arr.length === 0) return 0; 
+    let i = 0; //first pointer
+    for(let j = 1; j < arr.length; j++){ //j is second pointer
+        if(arr[i] !== arr[j]){
+            i++; 
+            arr[i] = arr[j] // now i becomes j and loop continues 
+        }
+    }
+    return i + 1 //to get length of array, take i[index] and add 1 since index starts at 0 in an array
+}
+```
+
+
+```javascript
+countUniqueValues([1,1,1,1,1,2]) //2
+countUniqueValues([1,2,3,4,4,4,7,7,12,12,13]) //7
+countUniqueValues([]) //0
+countUniqueValues([-2,-1,-1,0,1]) //4
+```
+- Now it is O(n) time because we are only looping once! 
